@@ -1,0 +1,48 @@
+#grad {background-image:linear-gradient(-90deg,red,yellow);}
+#grad1 {background-image:linear-gradient(red,yellow,green);}
+#grad2 {background-image:linear-gradient(to right,red,yellow,green,orange,blue,indigo,violet);}
+#grad3 {background-image:linear-gradient(to right,rgba(255,0,0,0),rgba(255,0,0,1));}
+#grad4 {background-image:repeating-linear-gradient(red,yellow 10%,green 20%);}
+#grad5 {background-image:radial-gradient(red,yellow,green 120%);}
+#grad6 {background-image:radial-gradient(red 5%,yellow 15%,green 60%);}
+#grad7 {background-image:radial-gradient(circle,red,yellow,green);}
+#grad8 {background-image:repeating-radial-gradient(red,yellow,green);}
+div{
+	width:100px;
+	height:100px;
+	animation-name:animat;
+	animation-duration:10s;
+	animation-direction:alternate;
+	transition:width 10s,transform 2s;
+	
+	}
+@keyframes anim{
+from {width:300px;
+			left:300px;	
+	}
+to {width:100px;}
+}
+
+@keyframes anima{
+0% {background-color:red;margin-left:0px;margin-top:0px;}
+25% {background-color:yellow;margin-left:500px;margin-top:0px;}
+50% {background-color:green;margin-left:500px;margin-top:500px;}
+75% {background-color:pink;margin-left:0px;margin-top:500px;}
+100%{background-color:blue;margin-left:0px;margin-top:50px;}
+}
+
+@keyframes animat{
+0% {background-color:red;margin-left:0px;margin-top:0px;}
+25% {background-color:yellow;margin-left:500px;margin-top:0px;}
+50% {background-color:green;margin-left:500px;margin-top:500px;}
+75% {background-color:pink;margin-left:1170px;margin-top:500px;}
+100%{background-color:blue;margin-left:1170px;margin-top:0px;}
+}
+
+div:hover{
+	animation-name:anima;
+	animation-duration:10s;
+	
+	transform:rotate(360deg);
+	}
+
